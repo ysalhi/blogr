@@ -1,99 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
   <title>Frontend Mentor | [Blogr]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
-  Product
+  <div class="pinkContainer">
+    <div class="navbar">
+      <img src="images/logo.svg" />
+      <div class="navMenu">
+        <div onclick="showMenu('product')" class="dropdown">
+          Product
+          <img src="images/icon-arrow-light.svg" />
+          <div id="product" class="dropdownContent">
+            Overview
+            Pricing
+            Marketplace
+            Features
+            Integrations
+          </div>
+        </div>
+        <div onclick="showMenu('company')" class="dropdown">
+          Company
+          <img src="images/icon-arrow-light.svg" />
+          <div id="company" class="dropdownContent">
+            About
+            Team
+            Blog
+            Careers
+          </div>
+        </div>
+        <div onclick="showMenu('connect')" class="dropdown">
+          Connect
+          <img src="images/icon-arrow-light.svg" />
+          <div id="connect" class="dropdownContent">
+            Contact
+            Newsletter
+            LinkedIn
+          </div>
+        </div>
+      </div>
+      <div class="login">
+        Login
+      </div>
+      <div class="signupButton">
+        Sign Up
+      </div>
+    </div>
+    <div class="mainTitle">A modern publishing platform</div>
+    <div class="subTitle">Grow your audience and build your online brand</div>
+    <div class="CTA">
+      <div class="startForFree">
+        Start for Free
+      </div>
+      <div class="learnMore">
+        Learn More
+      </div>
+    </div>
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+  </div>
+  <div class="topSection">
+    <div class="mainTitle">Designed for the future</div>
+    <div class="card">
+      <div class="cardTitle">
+        Introducing an extensible editor
+      </div>
+      <div class="cardContent">
+        Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+        The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+        videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+        change the looks of a blog.
+      </div>
+    </div>
 
-  Company
+    <div class="card">
+      <div class="cardTitle">
+        Robust content management
+      </div>
+      <div class="cardContent">
+        Flexible content management enables users to easily move through posts. Increase the usability of your blog
+        by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+      </div>
+    </div>
+    <img class="illustration" src="images/illustration-editor-desktop.svg" />
 
-  About
-  Team
-  Blog
-  Careers
 
-  Connect
 
-  Contact
-  Newsletter
-  LinkedIn
+  </div>
+  <div class="midSection">
+    <img src="images/illustration-phones.svg" class="phoneImg" />
+    <div class="description">
+      <div class="title">State of the Art Infrastructure</div>
+      <div class="subTitle">
+        With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="botSection">
+  <div class="card">
+    <div class="cardTitle">Free, open, simple</div>
+    <div class="cardContent">Blogr is a free and open source application backed by a large community of helpful developers. It supports
+      features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+      and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</div>
+  </div>
+  <div class="card">
+    <div class="cardTitle">Powerful tooling</div>
+    <div class="cardContent">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze,
+      but
+      capable of producing even the most complicated sites.</div>
+  </div>
+  <img class="illustration" src="images/illustration-laptop-desktop.svg" />  
+</div>
+
+<div class="footer">
+<img src="images/logo.svg"/>
+<div class="linksGroup">
+  <div class="linksTitle">Product</div>
+  <div class="link">Overview</div>
+  <div class="link">Pricing</div>
+  <div class="link">Marketplace</div>
+  <div class="link">Features</div>
+  <div class="link">Integrations</div>
+</div>
   
-  Login
-  Sign Up
+<div class="linksGroup">
+  <div class="linksTitle">Company</div>
+  <div class="link">About</div>
+  <div class="link">Team</div>
+  <div class="link">Blog</div>
+  <div class="link">Careers</div>
+</div>
 
-  A modern publishing platform
-  Grow your audience and build your online brand
+<div class="linksGroup">
+  <div class="linksTitle">Connect</div>
+  <div class="link">Contact</div>
+  <div class="link">Newsletter</div>
+  <div class="link">LinkedIn</div>
+</div>
 
-  Start for Free
-  Learn More
-
-  Designed for the future
-
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
-
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn
+</div>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+<script type="application/javascript" src="scripts/vanilla.js"></script>
+
 </html>
